@@ -54,14 +54,13 @@ changeImage.addEventListener('mouseenter', function () {
 })
 changeImage.addEventListener('mouseleave', function () {
     changeImage.src = 'images/shoes/shoe-1.png';
-    console.log('image found');
 })
 
 
 
 const touchArea = document.getElementById('touch-area');
-touchArea.addEventListener('dblclick', function (event) {
-    event.target.style.backgroundColor = 'green';
-    event.stopImmediatePropagation;
+const touchText = document.getElementById('touch-text');
+touchArea.addEventListener('dblclick', function () {
+    touchText.style.backgroundColor = 'purple';
 })
 
